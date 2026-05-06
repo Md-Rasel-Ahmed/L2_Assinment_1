@@ -42,11 +42,14 @@ interface Book{
 }
 
 function toggleReadStatus (obj:Book){
-  const newObj=obj
-  return obj
+  const newObj={
+    ...obj,
+    isRead:true
+  }
+  return newObj
 }
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
-// console.log(toggleReadStatus(myBook));
+console.log(toggleReadStatus(myBook));
 
 
 
