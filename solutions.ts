@@ -80,3 +80,6 @@ function getIntersection (arr1:number[],arr2:number[]){
  }
   return common;
 }
+
+
+
