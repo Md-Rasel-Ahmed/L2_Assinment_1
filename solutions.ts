@@ -3,14 +3,12 @@ function filterEvenNumbers(arr:number[]){
  const even =arr.filter(n=>n%2===0)
  return even
 }
-// console.log(filterEvenNumbers([1,2,3,4,5,6,7,8]));
 
 // Problem 2
 function reverseString(str:string){
   const reversStr=str.split("").reverse().join("")
   return reversStr;
 }
-// console.log(reverseString("Bangladesh"));
 
 
 // Problem 3
@@ -22,19 +20,16 @@ function checkType(text:StringOrNumber){
     return "Number"
   }
 }
-// console.log(checkType("Hello"));
 
 // Problem 4
 function getProperty<T,K extends keyof T>(obj:T,key:K){
   return obj[key];
 }
 const user = { id: "", name: "John Doe", age: 21,};
-// console.log(getProperty(user,"name"));
 
 
 
 // Problem 5
-// will fixed letter
 interface Book{
   title:string,
   author:string,
@@ -49,7 +44,6 @@ function toggleReadStatus (obj:Book){
   return newObj
 }
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
-console.log(toggleReadStatus(myBook));
 
 
 
@@ -74,7 +68,6 @@ class Student extends Person{
 }
 const student = new Student("Alice", 24, "A");
 const student2 = new Student("Rasel", 20, "B");
-// console.log(student.getDetails());
 
 
 // Problem 7
@@ -87,5 +80,3 @@ function getIntersection (arr1:number[],arr2:number[]){
  }
   return common;
 }
-// console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7,5,1]));
-
